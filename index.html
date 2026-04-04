@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junhyuk Youn — Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <nav>
+    <a href="#" class="nav-logo">JY</a>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-tag">Student &middot; Developer &middot; Seoul</div>
+    <h1>Junhyuk Youn</h1>
+    <p class="hero-sub">I build things that work by themselves.<br>Python, TypeScript, AI, and automation.</p>
+    <div class="hero-links">
+      <a href="https://github.com/jhyoun2028" target="_blank" class="btn">GitHub</a>
+      <a href="#contact" class="btn btn-ghost">Contact</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <a href="https://github.com/jhyoun2028/YT-Music-Lyrics-v3" target="_blank" class="project-card">
+        <div class="project-tag">Chrome Extension</div>
+        <h3>YT Music Lyrics v3</h3>
+        <p>Apple Music-style synced lyrics overlay for YouTube Music. Multi-source fallback chain (Musixmatch, lrclib, Cubey TTML), real-time sync engine, full-screen karaoke UI.</p>
+        <div class="project-tech">
+          <span>JavaScript</span><span>Chrome MV3</span><span>CSS</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/jhyoun2028/schule-autosort" target="_blank" class="project-card">
+        <div class="project-tag">Automation</div>
+        <h3>Schule Autosort</h3>
+        <p>macOS script that auto-sorts school files into subject folders on iCloud Drive. Set it and forget it.</p>
+        <div class="project-tech">
+          <span>Shell</span><span>macOS</span><span>iCloud</span>
+        </div>
+      </a>
+
+      <div class="project-card">
+        <div class="project-tag">Startup</div>
+        <h3>Taragen</h3>
+        <p>2026 Blueocean Global Competition &amp; Diamond Challenge finalist. Building at the intersection of AI and real-world problem solving.</p>
+        <div class="project-tech">
+          <span>Competition</span><span>Entrepreneurship</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience &amp; Recognition</h2>
+    <div class="exp-list">
+      <div class="exp-item">
+        <div class="exp-year">2026</div>
+        <div class="exp-detail">
+          <h3>Blueocean Global Competition</h3>
+          <p>Taragen &mdash; AI/startup pitch competition</p>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-year">2026</div>
+        <div class="exp-detail">
+          <h3>Diamond Challenge</h3>
+          <p>Taragen &mdash; entrepreneurship competition</p>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-year">2026</div>
+        <div class="exp-detail">
+          <h3>Herald &amp; TTT Article</h3>
+          <p>Published article</p>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-year">2026</div>
+        <div class="exp-detail">
+          <h3>Essay Contests</h3>
+          <p>Minds Underground &amp; Immerse Essay Contest</p>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-year">2026</div>
+        <div class="exp-detail">
+          <h3>Praktikum &mdash; Koryo Credit Information</h3>
+          <p>Internship experience in financial data</p>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-year">Current</div>
+        <div class="exp-detail">
+          <h3>DSSI International School</h3>
+          <p>High school student &mdash; Seoul, South Korea</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in touch</h2>
+    <p class="contact-text">Want to work together or just say hi?</p>
+    <div class="contact-links">
+      <a href="https://github.com/jhyoun2028" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Junhyuk Youn</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section, .project-card, .exp-item').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
