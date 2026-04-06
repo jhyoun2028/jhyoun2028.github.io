@@ -3,108 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Junhyuk Youn — Developer</title>
+  <title>Junhyuk Youn</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <div class="grain"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
 
   <nav>
     <a href="#" class="nav-logo">JY</a>
     <div class="nav-links">
-      <a href="#projects">Projects</a>
+      <a href="#work">Work</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
   <section class="hero">
-    <div class="hero-tag">Student &middot; Developer &middot; Seoul</div>
-    <h1>Junhyuk Youn</h1>
-    <p class="hero-sub">I build things that work by themselves.<br>Python, TypeScript, AI, and automation.</p>
-    <div class="hero-links">
-      <a href="https://github.com/jhyoun2028" target="_blank" class="btn">GitHub</a>
-      <a href="#contact" class="btn btn-ghost">Contact</a>
+    <div class="hero-label">
+      <span class="hero-label-line"></span>
+      <span>Seoul / Developer / Student</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="hero-line">Junhyuk</span>
+      <span class="hero-line hero-line-indent">Youn<span class="hero-dot">.</span></span>
+    </h1>
+    <div class="hero-footer">
+      <p class="hero-desc">I build things that work by themselves.<br>Python, TypeScript, AI, and automation.</p>
+      <div class="hero-actions">
+        <a href="https://github.com/jhyoun2028" target="_blank" class="btn-primary">
+          <span>GitHub</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn-outline">Say hello</a>
+      </div>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
+  <section id="work">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2>Selected Work</h2>
+    </div>
+    <div class="bento-grid">
 
-      <a href="https://github.com/jhyoun2028/YT-Music-Lyrics-v3" target="_blank" class="project-card">
-        <div class="project-tag">Chrome Extension</div>
-        <h3>YT Music Lyrics v3</h3>
-        <p>Apple Music-style synced lyrics overlay for YouTube Music. Multi-source fallback chain (Musixmatch, lrclib, Cubey TTML), real-time sync engine, full-screen karaoke UI.</p>
-        <div class="project-tech">
-          <span>JavaScript</span><span>Chrome MV3</span><span>CSS</span>
+      <a href="https://github.com/jhyoun2028/YT-Music-Lyrics-v3" target="_blank" class="bento-card bento-large">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="card-tag">Chrome Extension</span>
+            <svg class="card-arrow" width="20" height="20" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="card-bottom">
+            <h3>YT Music Lyrics v3</h3>
+            <p>Apple Music-style synced lyrics overlay for YouTube Music. Multi-source fallback chain, real-time sync engine, full-screen karaoke UI.</p>
+            <div class="card-tech">
+              <span>JavaScript</span><span>Chrome MV3</span><span>CSS</span>
+            </div>
+          </div>
         </div>
       </a>
 
-      <a href="https://github.com/jhyoun2028/schule-autosort" target="_blank" class="project-card">
-        <div class="project-tag">Automation</div>
-        <h3>Schule Autosort</h3>
-        <p>macOS script that auto-sorts school files into subject folders on iCloud Drive. Set it and forget it.</p>
-        <div class="project-tech">
-          <span>Shell</span><span>macOS</span><span>iCloud</span>
+      <a href="https://github.com/jhyoun2028/Ytm_plain" target="_blank" class="bento-card bento-medium">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="card-tag">Chrome Extension</span>
+            <svg class="card-arrow" width="20" height="20" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="card-bottom">
+            <h3>Ytm_plain</h3>
+            <p>Better Lyrics API with word-level sync. Cleaner, more performant lyrics engine.</p>
+            <div class="card-tech">
+              <span>JavaScript</span><span>Lyrics API</span>
+            </div>
+          </div>
         </div>
       </a>
 
-      <div class="project-card">
-        <div class="project-tag">Startup</div>
-        <h3>Taragen</h3>
-        <p>2026 Blueocean Global Competition &amp; Diamond Challenge finalist. Building at the intersection of AI and real-world problem solving.</p>
-        <div class="project-tech">
-          <span>Competition</span><span>Entrepreneurship</span>
+      <div class="bento-card bento-medium bento-accent">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="card-tag">Startup / Biotech</span>
+          </div>
+          <div class="card-bottom">
+            <h3>Taragen</h3>
+            <p>Extracting pharmaceutical-grade mucin from jellyfish &mdash; turning an environmental pest into premium skincare &amp; biotech ingredients. B2B platform. Blue Ocean &amp; Diamond Challenge finalist.</p>
+            <div class="card-tech">
+              <span>Biotech</span><span>B2B</span><span>Skincare</span><span>Blue Ocean</span>
+            </div>
+          </div>
         </div>
       </div>
+
+      <a href="https://github.com/jhyoun2028/schule-autosort" target="_blank" class="bento-card bento-small">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="card-tag">Automation</span>
+            <svg class="card-arrow" width="20" height="20" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="card-bottom">
+            <h3>Schule Autosort</h3>
+            <p>macOS script that auto-sorts school files into subject folders on iCloud Drive.</p>
+            <div class="card-tech">
+              <span>Shell</span><span>macOS</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://github.com/jhyoun2028/yt-music-lyrics" target="_blank" class="bento-card bento-small">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="card-tag">Chrome Extension</span>
+            <svg class="card-arrow" width="20" height="20" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="card-bottom">
+            <h3>YT Music Lyrics</h3>
+            <p>The original YouTube Music lyrics Chrome extension that started it all.</p>
+            <div class="card-tech">
+              <span>JavaScript</span><span>Chrome</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://github.com/jhyoun2028/School" target="_blank" class="bento-card bento-small">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="card-tag">Utilities</span>
+            <svg class="card-arrow" width="20" height="20" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="card-bottom">
+            <h3>School</h3>
+            <p>Collection of school-related resources and tools.</p>
+            <div class="card-tech">
+              <span>HTML</span>
+            </div>
+          </div>
+        </div>
+      </a>
 
     </div>
   </section>
 
   <section id="experience">
-    <h2>Experience &amp; Recognition</h2>
-    <div class="exp-list">
-      <div class="exp-item">
-        <div class="exp-year">2026</div>
-        <div class="exp-detail">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-content">
           <h3>Blueocean Global Competition</h3>
-          <p>Taragen &mdash; AI/startup pitch competition</p>
+          <p>Taragen &mdash; AI/startup pitch competition finalist</p>
         </div>
       </div>
-      <div class="exp-item">
-        <div class="exp-year">2026</div>
-        <div class="exp-detail">
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-content">
           <h3>Diamond Challenge</h3>
-          <p>Taragen &mdash; entrepreneurship competition</p>
+          <p>Taragen &mdash; entrepreneurship competition finalist</p>
         </div>
       </div>
-      <div class="exp-item">
-        <div class="exp-year">2026</div>
-        <div class="exp-detail">
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-content">
           <h3>Herald &amp; TTT Article</h3>
           <p>Published article</p>
         </div>
       </div>
-      <div class="exp-item">
-        <div class="exp-year">2026</div>
-        <div class="exp-detail">
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-content">
           <h3>Essay Contests</h3>
           <p>Minds Underground &amp; Immerse Essay Contest</p>
         </div>
       </div>
-      <div class="exp-item">
-        <div class="exp-year">2026</div>
-        <div class="exp-detail">
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-content">
           <h3>Praktikum &mdash; Koryo Credit Information</h3>
           <p>Internship experience in financial data</p>
         </div>
       </div>
-      <div class="exp-item">
-        <div class="exp-year">Current</div>
-        <div class="exp-detail">
+      <div class="timeline-item">
+        <div class="timeline-year">Now</div>
+        <div class="timeline-content">
           <h3>DSSI International School</h3>
           <p>High school student &mdash; Seoul, South Korea</p>
         </div>
@@ -113,18 +201,30 @@
   </section>
 
   <section id="contact">
-    <h2>Get in touch</h2>
-    <p class="contact-text">Want to work together or just say hi?</p>
-    <div class="contact-links">
-      <a href="https://github.com/jhyoun2028" target="_blank">GitHub</a>
+    <div class="contact-inner">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2>Contact</h2>
+      </div>
+      <h3 class="contact-heading">Let's build<br>something together.</h3>
+      <div class="contact-links">
+        <a href="https://github.com/jhyoun2028" target="_blank" class="contact-link">
+          <span>GitHub</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Junhyuk Youn</p>
+    <div class="footer-inner">
+      <span class="footer-name">Junhyuk Youn</span>
+      <span class="footer-year">&copy; 2026</span>
+    </div>
   </footer>
 
   <script>
+    /* Smooth scroll */
     document.querySelectorAll('a[href^="#"]').forEach(function(a) {
       a.addEventListener('click', function(e) {
         e.preventDefault();
@@ -133,15 +233,46 @@
       });
     });
 
+    /* Scroll reveal with stagger */
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-    document.querySelectorAll('section, .project-card, .exp-item').forEach(function(el) {
+    document.querySelectorAll('.hero-line, .hero-label, .hero-footer, .bento-card, .timeline-item, .contact-inner, .section-header').forEach(function(el) {
       observer.observe(el);
     });
+
+    /* Cursor glow effect */
+    var glow = document.getElementById('cursorGlow');
+    var glowX = 0, glowY = 0, currentX = 0, currentY = 0;
+
+    document.addEventListener('mousemove', function(e) {
+      glowX = e.clientX;
+      glowY = e.clientY;
+    });
+
+    function animateGlow() {
+      currentX += (glowX - currentX) * 0.08;
+      currentY += (glowY - currentY) * 0.08;
+      glow.style.transform = 'translate(' + (currentX - 300) + 'px, ' + (currentY - 300) + 'px)';
+      requestAnimationFrame(animateGlow);
+    }
+    animateGlow();
+
+    /* Nav scroll effect */
+    var nav = document.querySelector('nav');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 80) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
   </script>
+
 </body>
 </html>
